@@ -16,7 +16,7 @@ conda develop .
 conda develop . --uninstall
 ```
 
-## Install to LaunchAgents (Run at intervals)
+## Install to LaunchAgents (Run at intervals on mac)
 ```zsh
 ln -s $(pwd)/com.github.y-muen.remove-tos-tweet.plist ~/Library/LaunchAgents/com.github.y-muen.remove-tos-tweet.plist
 launchctl load ~/Library/LaunchAgents/com.github.y-muen.remove-tos-tweet.plist
@@ -24,7 +24,7 @@ launchctl load ~/Library/LaunchAgents/com.github.y-muen.remove-tos-tweet.plist
 
 if you modify the plist, use `cp` instead of `ln -s`.
 
-## Install from LaunchAgents
+## Uninstall from LaunchAgents
 ```zsh
 launchctl unload ~/Library/LaunchAgents/com.github.y-muen.remove-tos-tweet.plist
 ```
