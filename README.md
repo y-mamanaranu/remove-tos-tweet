@@ -1,4 +1,4 @@
-# Remove-tos-tweet
+# Remove @tos tweet
 Remove tweets including text '@tos'.
 
 ## Usage
