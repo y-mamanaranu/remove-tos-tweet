@@ -1,13 +1,14 @@
 """Remove @tos tweet."""
 
-__version__ = '0.1'
+__version__ = '0.1.0'
 
-from traitlets.config.configurable import Configurable
-from traitlets.config.loader import PyFileConfigLoader
-from pathlib import Path
-from traitlets.config import Config
 import glob
 import os
+from pathlib import Path
+
+from traitlets.config import Config
+from traitlets.config.configurable import Configurable
+from traitlets.config.loader import PyFileConfigLoader
 
 __all__ = [
     os.path.split(os.path.splitext(file)[0])[1]
@@ -94,7 +95,3 @@ def load_config(create: bool = False):
 # define c before load_config()
 c = Configurable.config = Config()
 load_config(create=True)
-
-if c:
-    # load main after load config
-    from .remover import main

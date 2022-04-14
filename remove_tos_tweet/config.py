@@ -1,5 +1,5 @@
 """Config."""
-from Remove_tos_tweet import c
+from remove_tos_tweet import c
 
 # go https://developer.twitter.com/en and obtaion secrets blelow
 c.Remover.api_key = None
